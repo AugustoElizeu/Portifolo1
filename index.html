@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="name" content="Augusto">
+        <meta name="keywords" content="Portifolio HTML CSS JAVASCRIPT">
+        <meta name="description" content="Isso é apenas uma fração do poder que eu futuramente posso atingir">
+        <title>Portifólio</title>
+        <link rel="stylesheet" href="css/silk.css">
+        <link rel="icon" type="image/ico" href="css/img/soap.ico">
+        <script src="beluga.js"></script>
+    </head>
+    <body>
+        <header class="">
+            <button class="btnl">Light</button>
+            <button class="btnh">Hamb</button>
+            <div class="listoff">
+                    <a href="#s1"><li>Home</li></a>
+                    <a href="#s3"><li>Projetos</li></a>
+                    <a href="#s2"><li>Sobre min</li></a>
+                    <a href="#s4"><li>Contato</li></a>
+            </div>
+        </header>
+        <main class="">
+            <section class="intro" id="s1">
+                <div class="fom">
+                    <p>Augusto Elizeu Cerrinho de Farias</p>
+                    <p class="BARRA" id="type">Desenvolvedor Front-End</p>
+                    <button>Contato</button>
+                    <button>Sobre mim</button>
+                </div>
+                <img src="css/img/pic.jpg" alt="Foto Minha">
+            </section>
+            <article class="sobre" id="s2">
+                <div class="content">
+                    <h2>Sobre min</h2>
+                    <p>     Olá, meu nome é Augusto Elizeu Cerrinho de Fárias, sou uma pessoa que
+                        adora aprender coisas novas, principalmente das minhas áreas de interesse.
+                        comecei com html, css e java script como hobby e hoje quero tornar isso uma profissão. </p>
+                    <h2>Objetivo</h2>
+                    <p>     Eu possuo como objetivo conseguir um estágio na área de desenvolvimento web Front-End para aprimorar
+                        minhas habilidades e contribuir com meus conhecimentos para a área.
+                    </p><br>
+                    <button>Ver currículo</button>
+                </div>
+            </article>
+            <section class="sol">
+                <img id="change" src="css/img/lua1.png" alt="">
+                <h2 class="h2ban" id="s3">Principais Projetos</h2>
+            </section>
+            <section class="prince">
+               <div class="card"><a href="">
+                    <img src="css/img/Proj.png" alt="Era pra ter uma foto aqui">
+                    <!--Icones Referente as tecnologias-->
+                    <h4>Nome do Projeto</h4>
+                    <p>Descrição do projeto</p>
+                </div></a>
+                <div class="card"><a href="">
+                    <img src="css/img/Proj.png" alt="Era pra ter uma foto aqui">
+                    <!--Icones Referente as tecnologias-->
+                    <h4>Nome do Projeto</h4>
+                    <p>Descrição do projeto</p>
+                </div></a>
+                <div class="card"><a href="">
+                    <img src="css/img/Proj.png" alt="Era pra ter uma foto aqui">
+                    <!--Icones Referente as tecnologias-->
+                    <h4>Nome do Projeto</h4>
+                    <p>Descrição do projeto</p>
+                </div></a>
+                <div class="card"><a href="">
+                    <img src="css/img/Proj.png" alt="Era pra ter uma foto aqui">
+                    <!--Icones Referente as tecnologias-->
+                    <h4>Nome do Projeto</h4>
+                    <p>Descrição do projeto</p>
+                </div></a>
+            </section>
+        </main>
+        <footer class="">
+            <section class="rodape" id="s4">
+                <h3 style="text-align: center;">Contatos:</h3>
+                <ul>
+                   <a href="https://www.linkedin.com/in/augusto-elizeu-cerrinho-de-farias-83a89726a/"><li>Linkedin</li></a>
+                   <a href="https://github.com/Blakeznov"><li>Github</li></a>
+                   <a href="augustocerrinho@hotmail.com"><li>Email</li></a>
+                </ul>
+            </section>
+        </footer>
+
+        <script>
+            var $hbg = document.querySelector('.listoff');
+            var $btnh = document.querySelector('.btnh');
+            var $btnl = document.querySelector('.btnl');
+            var $header = document.querySelector('header');
+            var $main = document.querySelector('main');
+            var $footer = document.querySelector('footer');
+            var $sob = document.querySelector('.sobre')
+            var $frut = document.querySelector('.h2ban');
+            var $txt = document.getElementById('type');
+            var x=0;
+            var y=0;
+            $btnh.addEventListener('click',hamber);
+            $btnl.addEventListener('click',lightmode);
+            type();
+        </script>
+    </body>
+</html>

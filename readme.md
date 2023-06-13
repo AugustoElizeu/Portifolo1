@@ -1,1 +1,1 @@
-Explicação de como usar o portifolio sonic banana
+Explicação de como usar o portifolio
